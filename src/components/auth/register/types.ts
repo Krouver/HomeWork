@@ -1,5 +1,9 @@
 export interface IRegisterPage {
-  username: string;
+  firstname: string;
+  lastname: string;
   email: string;
   password: string;
+  confirmPassword: string;
+  phone: string;
+  image: string;
 }
