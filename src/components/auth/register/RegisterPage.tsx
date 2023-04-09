@@ -23,11 +23,11 @@ const RegisterPage = () => {
         <h1 className="text-center">Реєстрація на сайті</h1>
         <form onSubmit={onSubmitHandler} className="col-md-6 offset-md-3">
           <div className="mb-3">
-            <label htmlFor="password" className="form-label">
+            <label htmlFor="username" className="form-label">
               Псевдонім
             </label>
             <input
-              type="string"
+              type="text"
               className="form-control"
               id="username"
               name="username"
