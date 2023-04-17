@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.output{
+  background-color: #fff;;
+  height: 300px;
+  overflow: hidden;
+  padding: 1em;
+  position: relative;
+}
+
+.output>section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+
+
+.output > section > img {
+  object-fit: contain;
+  height: 100%;
+    width: 100%;
+    flex-grow: 0;
+    overflow-clip-margin: content-box;
+}
