@@ -2,12 +2,12 @@ import { FC, InputHTMLAttributes } from "react";
 
 interface InputGroupProps extends InputHTMLAttributes<HTMLInputElement> {
   label: string;
-  type?: "text" | "password" | "email";
+  type?: "text" | "password" | "email";  //--------------------------------------------------- для чого знак питання?
   field: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void; //------------------------------------------------для чого ця строка і що вона виконує?
 }
 
-const InputGroup: FC<InputGroupProps> = ({
+const InputGroup: FC<InputGroupProps> = ({ //--------------------------------------------------- FC? Памятаємо що це якась реаківська лажа, все що пам'ятаємо
   label,
   type = "text",
   field,

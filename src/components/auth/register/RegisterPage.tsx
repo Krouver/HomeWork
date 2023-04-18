@@ -9,13 +9,13 @@ const RegisterPage = () => {
     email: "",
     password: "",
     image: null,
-    countryId: 0,
+    countryId: 0, //---------------------------------------------------для чого ми вказуємо "0" якщо і так відлік починається від "0".
   };
 
   //При зміни значення елемента в useState компонент рендериться повторно і виводить нові значення
   const [data, setData] = useState<IRegisterPage>(init);
 
-  const [countries, setCountries] = useState<ISelectItem[]>([
+  const [countries, setCountries] = useState<ISelectItem[]>([ //---------------------------------------------------не розуміємо сам запис(масив?)
     {
       id: 1,
       name: "Україна",
@@ -35,20 +35,20 @@ const RegisterPage = () => {
   //console.log("Дестурктуризація", {...data, password: "123456"});
 
   const onSubmitHandler = (e: any) => {
-    e.preventDefault();
+    e.preventDefault();// ---------------------------------------------------обнулення?
     console.log("Ми відправляємо на сервер", data);
     //setData({email: "pylyp", password: "123456"});
   };
 
   const onChangeHandler = (
-    e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLSelectElement>
+    e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLSelectElement> //---------------------------------------------------не розуміємо запис
   ) => {
     //console.log("Щось вводити в інтпут");
     //console.log(e.target.name, e.target.value);
-    setData({ ...data, [e.target.name]: e.target.value });
+    setData({ ...data, [e.target.name]: e.target.value });  //---------------------------------------------------не розуміємо запис
   };
 
-  const viewCountriesOption = countries.map((country, index) => (
+  const viewCountriesOption = countries.map((country, index) => ( //---------------------------------------------------не розуміємо запис який починається з const viewCountriesOption
     <option key={index} value={country.id}>
       {country.name}
     </option>

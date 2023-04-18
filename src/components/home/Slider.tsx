@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import classNames from "classnames"; //---------------------------------------------------де export classNames?
 import { useState } from "react";
 import image1 from "../../assets/1.jpg";
 import image2 from "../../assets/2.jpg";

@@ -2,6 +2,8 @@ import { ChangeEvent, FC, InputHTMLAttributes, useState } from "react";
 import defaultImage from "../../../assets/SelectImage.jpg";
 import "./style.css";
 
+
+//--------------------------------------------------- хотілося б від вас почути повний аналіз всіх записів у цьому файлі
 interface InputFileGroupProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: string;
   field: string;
@@ -55,3 +57,4 @@ const InputFileGroup: FC<InputFileGroupProps> = ({
 };
 
 export default InputFileGroup;
+
